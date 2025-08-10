@@ -2,12 +2,14 @@
 .env
 .env.local
 .env.production
+.env.staging
 
 # Docker volumes and data
 supabase/docker/volumes/
 neo4j/data/
 neo4j/logs/
 neo4j/config/
+neo4j/plugins/
 
 # Node modules (if any)
 node_modules/
@@ -15,26 +17,64 @@ node_modules/
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+*.so
 
 # IDE files
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Logs
 *.log
+logs/
+log/
 
 # Temporary files
 *.tmp
 *.temp
+*.bak
+*.backup
 
 # Database files
 *.db
 *.sqlite
+*.sqlite3
 
-# Backup files
-*.bak
-*.backup
+# Credentials and secrets
+credentials.json
+secrets.json
+*.key
+*.pem
+*.p12
+
+# Backup directories
+backup/
+backups/
+
+# Cache directories
+.cache/
+cache/
+
+# Build outputs
+dist/
+build/
+*.tar.gz
+*.zip
+
+# Local development
+.local/
+local/
